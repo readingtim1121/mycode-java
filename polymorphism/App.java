@@ -7,7 +7,7 @@ class Person {
         this.age = a;
     }
 
-    int getage(int a) {
+    public int getage() {
         return age;
     }
 }
@@ -27,8 +27,8 @@ public class App {
         Person tim = new Highschool(10);
         Highschool h = new Highschool(20);
 
-        System.out.println(tim.age);
-        System.out.println(h.age);
+        System.out.println(tim.getage());
+        System.out.println(h.getage());
     }
 
 }
