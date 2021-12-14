@@ -3,32 +3,39 @@ package polymorphism;
 class Person {
     int age;
 
-    public Person(int a) { // constructor建構式
-        this.age = a;
+    public int getAge() {
+        return age;
     }
 
-    public int getage() {
-        return age;
+    public void setAge(int a) {
+        age = a;
     }
 }
 
 class Highschool extends Person {
-    int name;
+    String name;
 
-    public Highschool(int a) { // constructor建構式
-        super(a);
+    public String getName() {
+        return name;
     }
+
+    public void setName(String b) {
+        name = b;
+    }
+
 }
 
 public class App {
 
     public static void main(String[] args) throws Exception {
 
-        Person tim = new Highschool(10);
-        Highschool h = new Highschool(20);
+        Person tim = new Highschool();
+        Highschool h = new Highschool();
+        tim.setAge(10);
+        h.setAge(18);
 
-        System.out.println(tim.getage());
-        System.out.println(h.getage());
+        System.out.println(tim.getAge());
+        System.out.println(h.getAge());
     }
 
 }
