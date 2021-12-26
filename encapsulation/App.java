@@ -1,6 +1,6 @@
-package encapsulation1;
+package encapsulation;
 
-import encapsulation1.people.People;
+import encapsulation.people.People;
 
 class Tim extends People {
     public void lalala() {
