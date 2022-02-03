@@ -1,3 +1,3 @@
 # mycode-java
 # polymorphism
-# encapslution
+# encapsulation
